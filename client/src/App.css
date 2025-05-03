@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1d2b64, #f8cdda);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-container {
+  width: 400px;
+  background-color: #ffffffcc;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.chat-title {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.chat-box {
+  border: 1px solid #ddd;
+  height: 250px;
+  padding: 10px;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: #fafafa;
+  margin-bottom: 15px;
+}
+
+.chat-message {
+  background: #e0f7fa;
+  padding: 8px 12px;
+  margin: 5px 0;
+  border-radius: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+.chat-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.chat-button {
+  padding: 10px 20px;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.chat-button:hover {
+  background-color: #008fa1;
+}
+
+/* Add styles for left and right alignment of chat messages */
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  word-wrap: break-word;
+}
+
+.message.left {
+  align-self: flex-start;
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.message.right {
+  align-self: flex-end;
+  background-color: #007bff;
+  color: #fff;
+}
+
+/* Add styles for the input box to match the provided design */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.input-container input::placeholder {
+  color: #aaa;
+}
+
+.input-container button {
+  background-color: #28a745;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-container button:hover {
+  background-color: #218838;
+}
+
+.input-container button svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
